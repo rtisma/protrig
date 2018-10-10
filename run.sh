@@ -1,3 +1,3 @@
 version=latest
-docker pull rtisma/protrig:${version}
-docker run --rm -it rtisma/protrig:${version}  --spring.profiles.active=dev
+docker pull rtisma1/protrig:${version}
+docker run --rm -it rtisma1/protrig:${version}  --spring.profiles.active=dev
