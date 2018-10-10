@@ -10,6 +10,14 @@ management:
 swagger:
   alternateUrl: "/api-docs"
 
+db:
+  host: localhost
+  port: 5432
+  username: postgres
+  password: password
+  name: myDbName
+  tables: table1, table2, table3
+
 auth:
   # Connection retries in case of connection failure
   connection:
