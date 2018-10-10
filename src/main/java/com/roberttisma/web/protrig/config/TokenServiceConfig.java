@@ -29,7 +29,7 @@ import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
 
 @NoArgsConstructor
 @Configuration
-@Profile("secure")
+@Profile("prod")
 public class TokenServiceConfig {
 
   @Bean

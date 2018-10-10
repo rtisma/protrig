@@ -1,5 +1,6 @@
 package com.roberttisma.web.protrig.controller;
 
+import com.roberttisma.web.protrig.model.SyncIdDataResponse;
 import com.roberttisma.web.protrig.service.ProcessService;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -19,8 +20,8 @@ public class ProcessController {
 
   @ApiOperation(value = "ReadAnalysis", notes = "Retrieve the analysis object for an analysisId")
   @GetMapping(value = "/syncIdServer")
-  public void syncIdServer() {
-    processService.syncIdData();
+  public SyncIdDataResponse syncIdServer() {
+    return processService.syncIdData();
   }
 
 }
