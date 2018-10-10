@@ -15,6 +15,7 @@
   ~ You should have received a copy of the GNU Affero General Public License
   ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -74,6 +75,7 @@
         <dependency>
             <groupId>org.springframework.security.oauth</groupId>
             <artifactId>spring-security-oauth2</artifactId>
+            <version>${spring-security-oauth2.version}</version>
         </dependency>
 
         <dependency>
@@ -168,10 +170,12 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox.version}</version>
         </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox.version}</version>
         </dependency>
 
     </dependencies>
@@ -234,6 +238,9 @@
         <!--<springfox.version>2.7.0</springfox.version>-->
         <guava.version>26.0-jre</guava.version>
         <mapstruct.version>1.2.0.Final</mapstruct.version>
+
+        <spring-security-oauth2.version>2.3.3.RELEASE</spring-security-oauth2.version>
+        <springfox.version>2.9.2</springfox.version>
 	</properties>
 
 </project>
